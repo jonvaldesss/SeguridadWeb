@@ -3,11 +3,10 @@
 include("con_db.php");
 
 if (isset($_POST['login'])) {
-    if(!empty($_POST['usuario1']) && !empty($_POST['contraseña1'])){
+    if(!empty($_POST['usuario']) && !empty($_POST['contraseña'])){
 
-
-    $usuario = trim($_POST["usuario1"]);
-    $contraseña = trim($_POST["contraseña1"]);
+    $usuario = trim($_POST["usuario"]);
+    $contraseña = trim($_POST["contraseña"]);
 
     $consulta = "SELECT * FROM usuarios WHERE usuario='$usuario' AND contraseña='$contraseña'";
     $resultado = mysqli_query($conn, $consulta);
