@@ -1,0 +1,68 @@
+body{
+    background: #ddd;
+    font-family: monospace;
+}
+
+.container-table{
+    width: 95%;
+    background: white;
+    margin: 50px auto;
+    box-shadow: 0 0 20px #333;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);/* datos del usuario */
+    grid-auto-rows: 40px;
+}
+
+.table__title{
+    grid-column-start: 1;
+    grid-column-end: 8;
+
+    background: rgba(40,65,120,1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.9em;
+}
+
+.table__header, .table__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table__header{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.table__item{
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+
+
+.container-table--edit{
+    grid-template-columns: repeat(7, 1fr);
+    width: 95%;
+    min-width: 900px;
+}
+
+.table__title--edit{ /* anchura del color del titulo */
+    grid-column-start: 1;
+    grid-column-end: 9;
+
+    background: #41812f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.9em;
+}
+
+.title_edit{
+    position: absolute;
+}

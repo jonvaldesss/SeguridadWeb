@@ -1,4 +1,5 @@
 <?php
+ob_start();
   // phpinfo();
   $hostname = "db";
   $username = "root";
