@@ -1,11 +1,9 @@
 <?php
     session_start();
     include("con_db.php");
-    $usuarios = "SELECT * FROM usuarios";
-    $usuario = $_SESSION['usuario'];
-    $contraseña = $_SESSION['contraseña'];
-    $conn = mysqli_connect($hostname,$username,$password,$db);
-    $consulta = "SELECT * FROM usuarios";
+    $usuario = $_SESSION["usuario"];
+
+    $consulta = "SELECT * FROM usuarios WHERE usuario='$usuario'";
 ?>
 
 <!DOCTYPE html>
@@ -44,22 +42,10 @@
             <div class="table__item"><?php echo $row["usuario"];?></div> 
             <div class="table__item"><?php echo $row["contraseña"];?></div> 
             <div class="table__item">
-                <a href="" class="table__item__link">Editar</a> |
-                <a href="" class="table__item__link">Eliminar</a>
+                <a href="modificarusuario.php" class="table__item__link">Editar</a>
             </div> 
            <?php } mysqli_free_result($resultado);?>
     </div>
 
-        
-
-
-
-
-
-
-
-
-
-  
 </body>
 </html>

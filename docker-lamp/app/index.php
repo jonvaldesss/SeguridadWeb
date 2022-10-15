@@ -1,4 +1,8 @@
-
+<?php   
+        
+    include("login.php");
+        
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,14 +29,9 @@
             <!--botón iniciar sesión-->
             <input type="submit" name = "login" value="Iniciar sesión">
 
-            <a href="#">¿Has olvidado tu contraseña?</a><br>
             <a href="registro.php">¿No tienes una cuenta? ¡Regístrate!</a>
         </form>
-        <?php   
-        
-        include("login.php");
-        
-        ?>
+       
     </div>
 
 </body>

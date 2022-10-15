@@ -1,17 +1,13 @@
 <?php   
 ob_start();
 include("con_db.php");
+      session_start();
+     $_SESSION["usuario"];
+     if (isset($_POST['login'])) {
+        if(!empty($_POST['usuario']) && !empty($_POST['contraseña'])){
+            $usuario = trim($_POST["usuario"]);
+            $contraseña = trim($_POST["contraseña"]);
 
-// if (isset($_POST['login'])) {
-//     if(!empty($_POST['usuario']) && !empty($_POST['contraseña'])){
-
-    $usuario = trim($_POST["usuario"]);
-     $contraseña = trim($_POST["contraseña"]);
-    
-    //session_start();
-     $_SESSION["usuario"] = $usuario;
-    
-     $conexion = mysqli_connect($hostname,$username,$password,$db);
     
      $consulta = "SELECT * FROM usuarios WHERE usuario='$usuario' AND contraseña='$contraseña'";
      $resultado = mysqli_query($conn, $consulta);
@@ -23,8 +19,9 @@ include("con_db.php");
          //session_register("usuario");
          //$_SESSION["login_user"] = $usuario;
          //header("location:bienvenidos.php");
+        $_SESSION["usuario"] = $usuario;
         ?>
-        echo <script>window.location="bienvenidos.php"</script>;
+        echo <script>window.location="portatiles.php"</script>;
         <?php
         }
          else{
@@ -36,8 +33,9 @@ include("con_db.php");
              <?php 
 
          }
-        mysqli_free_result($resultado);
-        mysqli_close($conexion);
-//     }
-// }
+        
+
+    }
+}
+
 ?>
