@@ -18,7 +18,7 @@ Lo primero es sitúar la terminal dentro del repositorio **/docker-lamp**
 
 >Para añadir los datos necesarios **http://localhost:8890/**
 
-Como hemos definido en el archivo docker-compose.yml, (usuario "admin", password "test"). Haz click en "database" y luego en "import", e importamos nuestra base de datos /SeguridadWeb/portatiles.sql
+Como hemos definido en el archivo docker-compose.yml, (usuario "root", password "root"). Haz click en "database" y luego en "import", e importamos nuestra base de datos /SeguridadWeb/portatiles.sql
 
 
 >Para parar los servicios, en otra terminal introduce:
