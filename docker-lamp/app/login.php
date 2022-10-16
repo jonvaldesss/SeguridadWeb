@@ -16,19 +16,17 @@ include("con_db.php");
     
 
      if($count==1){
-         //session_register("usuario");
-         //$_SESSION["login_user"] = $usuario;
-         //header("location:bienvenidos.php");
+         
         $_SESSION["usuario"] = $usuario;
         ?>
-        echo <script>window.location="portatiles.php"</script>;
+        echo <script>window.location="paginaprincipal.php"</script>;
         <?php
         }
          else{
 
              ?>  
         
-             <h3 class="bad" >!Usuario o contraseña incorrecta!</h3>
+             <script>alert('Ha ocurrido un error');window.location='index.php'</script>
         
              <?php 
 

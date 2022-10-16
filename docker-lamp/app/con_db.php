@@ -4,7 +4,7 @@ ob_start();
   $hostname = "db";
   $username = "root";
   $password = "root";
-  $db = "registro";
+  $db = "entrega_1";
 
   $conn = mysqli_connect($hostname,$username,$password,$db);
   if ($conn->connect_error) {
