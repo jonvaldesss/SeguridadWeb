@@ -8,15 +8,15 @@ body{
     background: white;
     margin: 50px auto;
     box-shadow: 0 0 20px #333;
-    
+
     display: grid;
-    grid-template-columns: repeat(8, 1fr);/* datos del usuario */
+    grid-template-columns: repeat(6, 1fr);/* datos del usuario */
     grid-auto-rows: 40px;
 }
 
 .table__title{
     grid-column-start: 1;
-    grid-column-end: 8;
+    grid-column-end: 7;
 
     background: rgba(40,65,120,1);
     color: white;
@@ -45,14 +45,14 @@ body{
 
 
 .container-table--edit{
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     width: 95%;
     min-width: 900px;
 }
 
 .table__title--edit{ /* anchura del color del titulo */
     grid-column-start: 1;
-    grid-column-end: 9;
+    grid-column-end: 7;
 
     background: #41812f;
     color: white;
@@ -65,4 +65,5 @@ body{
 
 .title_edit{
     position: absolute;
+    right: 4%;
 }

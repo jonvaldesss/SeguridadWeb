@@ -55,6 +55,10 @@
                 ?>  
              
                     <h3 class="ok" >!El portatil se ha añadido correctamente!</h3>
+                    <div class="table__item">
+                         <a href="portatiles.php" class="table__item__link">VOLVER</a>|
+                    </div> 
+
          
                 <?php
  
