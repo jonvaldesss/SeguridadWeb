@@ -14,28 +14,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Portátil</title>
-    <link rel="stylesheet" href="estiloseditarportatil.css">
+    <link rel="stylesheet" href="style-editarportatil.css">
 </head>
 <body>
 
-    <div class="caja-modificar">
-        <form method="post">
-            <!--botón modificar-->
-            <a href="bienvenidos.php">Datos del usuario</a>
-        </form>
-       
-    </div>
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="logo nav-link"><img src="images/logotoplap.PNG"></a>
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="paginaprincipal.php" class="nav-menu-link nav-link">Página principal</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="añadirportatil.php" class="nav-menu-link nav-link">Añadir portatil</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="bienvenidos.php" class="nav-menu-link nav-link">Usuario</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="index.php" class="nav-menu-link nav-link">Cerrar sesión</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <div class="caja-añadir">
-        <form method="post">
-            <!--botón añadir-->
-            <a href="añadirportatil.php">Añadir Portátil</a>    
-        </form>
-       
-    </div>
 
     <form class="container-table container--table--edit" action="modificarportatil.php" method="post">
-     <div class="table__title table__title--edit">Portátiles <a href="añadirportatil.php" class="title_edit">Añadir Portátil</a> </div>
+     <div class="table__title table__title--edit">Portátiles </div>
      
         <div class="table__header">Marca</div>
         <div class="table__header">Modelo</div>

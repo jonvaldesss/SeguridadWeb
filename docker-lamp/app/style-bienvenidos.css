@@ -1,0 +1,152 @@
+
+/*Barra de navegación*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+  }
+  
+  .header {
+    background-color: #ffffff;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  
+  .nav-link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+  }
+  
+  .nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+  }
+  
+  .nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+  
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background-color: #41812f;
+    transition: 0.5s;
+  }
+  
+  /* TOGGLE */
+  .nav-toggle {
+    color: black;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+  
+    display: none;
+  }
+
+
+
+
+
+body{
+    background: #ddd;
+    font-family: sans-serif;
+}
+
+.container-table{
+    width: 95%;
+    background: white;
+    margin: 50px auto;
+    box-shadow: 0 0 20px #333;
+    
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);/* datos del usuario */
+    grid-auto-rows: 70px;
+}
+
+.table__title{
+    grid-column-start: 1;
+    grid-column-end: 8;
+
+    background: rgba(40,65,120,1);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.9em;
+}
+
+.table__header, .table__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table__header{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.table__item{
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+
+
+.container-table--edit{
+    grid-template-columns: repeat(7, 1fr);
+    width: 95%;
+    min-width: 900px;
+}
+
+.table__title--edit{ /* anchura del color del titulo */
+    grid-column-start: 1;
+    grid-column-end: 9;
+
+    background: #41812f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.9em;
+}
+
+.title_edit{
+    position: absolute;
+}

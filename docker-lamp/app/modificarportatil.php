@@ -20,7 +20,7 @@
              
              <h3 class="ok" >!Se han actualizado los datos del portátil correctamente!</h3>
              <div class="table__item">
-                <a href="portatiles.php" class="table__item__link">ACTUALIZAR</a>|
+                <a href="paginaprincipal.php" class="table__item__link">ACTUALIZAR</a>|
                 
             </div> 
 

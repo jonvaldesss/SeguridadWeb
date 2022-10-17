@@ -9,13 +9,39 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-registro.css">
+    <link rel="stylesheet" href="style-modificarusuario.css">
     <title>Modificar</title>
 </head>
 <body>
+
+
+<header class="header">
+      <nav class="nav">
+        <a href="#" class="logo nav-link"><img src="images/logotoplap.PNG"></a>
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="paginaprincipal.php" class="nav-menu-link nav-link">Página principal</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="añadirportatil.php" class="nav-menu-link nav-link">Añadir portatil</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="bienvenidos.php" class="nav-menu-link nav-link">Usuario</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="index.php" class="nav-menu-link nav-link">Cerrar sesión</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
     <!-- Modificar -->
 
-    <div class="caja-login">
+    <div class="caja-añadir">
         <h1>Modificar</h1>
         <form method = "post">
             <!--nombre-->

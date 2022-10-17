@@ -11,11 +11,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-index.css">
-    <title>Iniciar sesión</title>
+    <title>Top Lap - Iniciar sesión</title>
 </head>
 <body>
 
     <div class="caja-login">
+
         <h1>Iniciar sesión</h1>
         <form method="post">
             <!--nombre de usuario-->

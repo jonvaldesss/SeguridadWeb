@@ -9,7 +9,7 @@
 
 if($resultado){
            
-    header("Location: portatiles.php");
+    header("Location: paginaprincipal.php");
         }
         else{
  

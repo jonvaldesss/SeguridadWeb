@@ -1,0 +1,161 @@
+/*Barra de navegación*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+  }
+  
+  .header {
+    background-color: #ffffff;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  
+  .nav-link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+  }
+  
+  .nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+  }
+  
+  .nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+  
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background-color: #41812f;
+    transition: 0.5s;
+  }
+  
+  /* TOGGLE */
+  .nav-toggle {
+    color: black;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+  
+    display: none;
+  }
+
+
+
+
+
+
+
+
+body {
+    background: #ddd;
+    margin: 0;
+    padding: 0; 
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.caja-añadir {
+    width: 320px;
+    height: 700px;
+    top: 50%;
+    left: 50%;
+    background: #000000;
+    color: #ffffff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.caja-añadir h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.caja-añadir label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.caja-añadir input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.caja-añadir input[type="text"],
+.caja-añadir input[type="password"],
+.caja-añadir input[type="email"],
+.caja-añadir input[type="date"],
+.caja-añadir input[type="tel"] {
+
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.caja-añadir input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background:#41812f;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.caja-añadir a {
+   text-decoration: none;
+   font-size: 12px;
+   line-height: 20px;
+   color: #6c6c6c;
+}
+
+.caja-añadir a:hover {
+    color:#ffffff;
+}

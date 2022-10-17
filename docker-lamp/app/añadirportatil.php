@@ -4,14 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-registro.css">
+    <link rel="stylesheet" href="style-añadirportatil.css">
     <title>Añadir portátil</title>
 </head>
 <body>
-    <!-- registro -->
+
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="logo nav-link"><img src="images/logotoplap.PNG"></a>
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="paginaprincipal.php" class="nav-menu-link nav-link">Página principal</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="añadirportatil.php" class="nav-menu-link nav-link">Añadir portatil</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="bienvenidos.php" class="nav-menu-link nav-link">Usuario</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="index.php" class="nav-menu-link nav-link">Cerrar sesión</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <div class="caja-añadir">
-        <h1>Añadir</h1>
+        <h1>Añadir portatil</h1>
         <form method = "post">
             <!--marca-->
             <label for="marca">Marca</label>
@@ -56,7 +78,7 @@
              
                     <h3 class="ok" >!El portatil se ha añadido correctamente!</h3>
                     <div class="table__item">
-                         <a href="portatiles.php" class="table__item__link">VOLVER</a>|
+                         <a href="paginaprincipal.php" class="table__item__link">VOLVER</a>|
                     </div> 
 
          
